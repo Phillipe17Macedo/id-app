@@ -7,9 +7,10 @@ export const styles = StyleSheet.create({
     backgroundColor: '#fff',
     color: 'black',
     fontSize: 21,
-    borderRadius: 15,
+    borderRadius: 25,
     paddingLeft: 15,
-    marginTop: 20,
-
+    marginTop: 10,
+    borderWidth: 3,
+    borderColor: '#9163F2',
   },
 });

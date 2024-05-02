@@ -1,20 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { TextInput, View } from 'react-native';
 
 import { styles } from './styles';
 
-export function InputLogin() {
+interface LoginInputProps {
+  email: string
+  senha: string
+}
+
+export function InputLogin(props: LoginInputProps) {
+  const [email, setEmail] = useState('')
+  const [senha, setSenha] = useState('')
+
   return (
     <>
         <TextInput
-            style={[styles.inputLogin, {marginTop: 50}]}
+            style={[styles.inputLogin, {marginTop: 5}]}
             placeholder='Email'
             keyboardType='email-address'
         />
         <TextInput
             style={[styles.inputLogin]}
             placeholder='Senha'
-            keyboardType='email-address'
+            keyboardType='default'
+            secureTextEntry
         />
     </>
   );

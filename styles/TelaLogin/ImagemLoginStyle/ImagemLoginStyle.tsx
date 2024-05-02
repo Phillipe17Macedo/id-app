@@ -1,14 +1,14 @@
 import React from 'react';
 import { Image, Text } from 'react-native';
 
-import { styles } from './LoginStyles';
-import { loginLogo } from '../../assets/images/security-gif.gif';
+import { styles } from './style';
+import loginLogo from '../../../assets/images/security-gif.gif';
 
 export function ImagemTelaLogin() {
   return (
     <>
         <Text style={[styles.titulo]}>
-            LOGIN ID
+            LOGIN APP
         </Text>
         <Image source={loginLogo} style={[styles.imagemLogin]}/>
     </>
